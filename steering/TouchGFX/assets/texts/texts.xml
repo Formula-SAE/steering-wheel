@@ -4,19 +4,42 @@
     <Language Id="GB" />
   </Languages>
   <Texts>
-    <TextGroup Id="Group1">
-      <Text Id="ResourceId2" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">New Text</Translation>
+    <TextGroup Id="DriveScreen">
+      <Text Id="__SingleUse_EQH4" Alignment="Center" TypographyId="Primary_Medium">
+        <Translation Language="GB">&lt;value&gt;</Translation>
       </Text>
-      <Text Id="ResourceId1" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">Ciao</Translation>
+      <Text Id="__SingleUse_WU7M" Alignment="Left" TypographyId="Secondary_Medium">
+        <Translation Language="GB">AVG &lt;value&gt;ºC</Translation>
+      </Text>
+      <Text Id="__SingleUse_MA3M" Alignment="Left" TypographyId="Secondary_Medium">
+        <Translation Language="GB">MAX &lt;value&gt;ºC</Translation>
+      </Text>
+      <Text Id="__SingleUse_WFZA" Alignment="Left" TypographyId="Primary_Large">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_38DO" Alignment="Left" TypographyId="Primary_Large">
+        <Translation Language="GB">999</Translation>
+      </Text>
+      <Text Id="__SingleUse_AL80" Alignment="Left" TypographyId="Primary_Large">
+        <Translation Language="GB">999</Translation>
+      </Text>
+      <Text Id="__SingleUse_5924" Alignment="Left" TypographyId="Primary_Large">
+        <Translation Language="GB">999</Translation>
+      </Text>
+      <Text Id="__SingleUse_UHSG" Alignment="Left" TypographyId="Primary_Large">
+        <Translation Language="GB">999 : 99 : 999</Translation>
       </Text>
     </TextGroup>
-    <TextGroup Id="Unsorted" />
+    <TextGroup Id="Unsorted">
+      <Text Id="__SingleUse_2BRM" Alignment="Left" TypographyId="Primary_Small">
+        <Translation Language="GB">DRIVE MODE</Translation>
+      </Text>
+    </TextGroup>
   </Texts>
   <Typographies>
-    <Typography Id="Default" Font="verdana.ttf" Size="20" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
-    <Typography Id="Large" Font="verdana.ttf" Size="40" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
-    <Typography Id="Small" Font="verdana.ttf" Size="10" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
+    <Typography Id="Primary_Medium" Font="Orbitron-VariableFont_wght.ttf" Size="32" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacters=":, " WildcardCharacterRanges="0-9" />
+    <Typography Id="Primary_Large" Font="Orbitron-VariableFont_wght.ttf" Size="144" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="a-z,0-9,A-Z" />
+    <Typography Id="Primary_Small" Font="Orbitron-VariableFont_wght.ttf" Size="20" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0-9" />
+    <Typography Id="Secondary_Medium" Font="verdana.ttf" Size="32" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0-9" />
   </Typographies>
 </TextDatabase>
