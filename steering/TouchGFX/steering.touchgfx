@@ -2,7 +2,22 @@
   "Application": {
     "Screens": [
       {
-        "Name": "Screen1",
+        "Name": "DriveScreen",
+        "Components": [],
+        "Interactions": []
+      },
+      {
+        "Name": "MenuScreen",
+        "Components": [],
+        "Interactions": []
+      },
+      {
+        "Name": "SectionScreen",
+        "Components": [],
+        "Interactions": []
+      },
+      {
+        "Name": "ModuleScreen",
         "Components": [],
         "Interactions": []
       }
@@ -14,7 +29,7 @@
       "Height": 800
     },
     "SelectedColorDepth": 16,
-    "StartupScreenName": "Screen1",
+    "StartupScreenName": "DriveScreen",
     "SelectedStartupLanguage": "GB",
     "TouchGfxPath": "../Middlewares/ST/touchgfx",
     "UIPath": ".",
