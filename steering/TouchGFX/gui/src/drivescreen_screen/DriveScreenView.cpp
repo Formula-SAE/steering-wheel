@@ -1,4 +1,5 @@
 #include <gui/drivescreen_screen/DriveScreenView.hpp>
+#include <texts/TextKeysAndLanguages.hpp>
 
 DriveScreenView::DriveScreenView()
 {

@@ -3,8 +3,162 @@
     "Screens": [
       {
         "Name": "DriveScreen",
-        "Components": [],
-        "Interactions": []
+        "Includes": "",
+        "Components": [
+          {
+            "Type": "TextArea",
+            "Name": "maxTemp",
+            "X": 9,
+            "Y": 375,
+            "Width": 181,
+            "Height": 32,
+            "TextId": "__SingleUse_MA3M",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 252,
+              "Green": 10,
+              "Blue": 10
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_5924"
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "avgTemp",
+            "X": 9,
+            "Y": 421,
+            "Width": 178,
+            "Height": 32,
+            "TextId": "__SingleUse_WU7M",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 250,
+              "Green": 186,
+              "Blue": 10
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_AL80"
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "speed",
+            "X": 222,
+            "Y": 21,
+            "Width": 357,
+            "Height": 180,
+            "TextId": "__SingleUse_WFZA",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_38DO",
+              "UseBuffer": true,
+              "BufferSize": 4
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "clock",
+            "X": 267,
+            "Y": 303,
+            "Width": 266,
+            "Height": 36,
+            "TextId": "__SingleUse_EQH4",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_UHSG"
+            }
+          },
+          {
+            "Type": "Container",
+            "Name": "driveMode",
+            "Width": 800,
+            "Height": 23,
+            "Components": [
+              {
+                "Type": "Box",
+                "Name": "driveModeBox",
+                "Width": 800,
+                "Height": 23,
+                "Color": {
+                  "Red": 255
+                }
+              },
+              {
+                "Type": "TextArea",
+                "Name": "driveModeText",
+                "X": 327,
+                "Width": 146,
+                "Height": 20,
+                "TextId": "__SingleUse_2BRM",
+                "TextRotation": "0",
+                "Color": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "AutoSize": true
+              }
+            ]
+          },
+          {
+            "Type": "BoxProgress",
+            "Name": "battPower",
+            "X": 100,
+            "Y": 208,
+            "Width": 600,
+            "Height": 64,
+            "Direction": "Left",
+            "FileNameBackground": "progress.png",
+            "IndicatorPositionWidth": 600,
+            "IndicatorPositionHeight": 64,
+            "ProgressRangeMax": 100,
+            "ProgressInitialValue": 40
+          },
+          {
+            "Type": "BoxProgress",
+            "Name": "boxProgress1",
+            "X": 483,
+            "Y": 393,
+            "Width": 300,
+            "Height": 60,
+            "Direction": "Left",
+            "FileNameBackground": "battery.png",
+            "IndicatorPositionX": 8,
+            "IndicatorPositionY": 9,
+            "IndicatorPositionWidth": 272,
+            "IndicatorPositionHeight": 42,
+            "ProgressRangeMax": 100,
+            "ProgressInitialValue": 74
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerOnEveryTick",
+              "TickCount": 1
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "function1"
+            }
+          }
+        ]
       },
       {
         "Name": "MenuScreen",
