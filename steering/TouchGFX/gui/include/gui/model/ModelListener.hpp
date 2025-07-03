@@ -14,6 +14,12 @@ public:
     {
         model = m;
     }
+
+    virtual void setSpeed(int speed) {}
+    virtual void setMaxTemp(int maxTemp) {}
+    virtual void setAvgTemp(int avgTemp) {}
+    virtual void setBatteryLevel(int batteryLevel) {}
+    virtual void setBatteryPower(int batteryPower) {}
 protected:
     Model* model;
 };
