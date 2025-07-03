@@ -26,6 +26,12 @@ public:
     virtual void deactivate();
 
     virtual ~DriveScreenPresenter() {}
+    
+    void setSpeed(int speed) override;
+    void setMaxTemp(int maxTemp) override;
+    void setAvgTemp(int avgTemp) override;
+    void setBatteryLevel(int batteryLevel) override;
+    void setBatteryPower(int batteryPower) override;
 
 private:
     DriveScreenPresenter();

@@ -11,6 +11,12 @@ public:
     virtual ~DriveScreenView() {}
     virtual void setupScreen();
     virtual void tearDownScreen();
+
+    void setSpeed(int speed);
+    void setMaxTemp(int maxTemp);
+    void setAvgTemp(int avgTemp);
+    void setBatteryLevel(int batteryLevel);
+    void setBatteryPower(int batteryPower);
 protected:
 };
 

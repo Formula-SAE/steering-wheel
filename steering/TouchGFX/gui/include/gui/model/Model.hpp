@@ -16,6 +16,11 @@ public:
     void tick();
 protected:
     ModelListener* modelListener;
+    int speed;
+    int maxTemp;
+    int avgTemp;
+    int batteryLevel;
+    int batteryPower;
 };
 
 #endif // MODEL_HPP
