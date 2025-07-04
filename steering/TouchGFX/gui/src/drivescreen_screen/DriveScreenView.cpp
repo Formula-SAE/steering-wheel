@@ -6,7 +6,7 @@ DriveScreenView::DriveScreenView()
     setSpeed(0);
     setMaxTemp(0);
     setAvgTemp(0);
-    setBatteryLevel(100);
+    setBatteryLevel(0);
     setBatteryPower(0);
     setClock("000 : 00 : 000");
     setDriveMode(false);
@@ -24,17 +24,7 @@ void DriveScreenView::tearDownScreen()
 
 void DriveScreenView::setSpeed(int speed)
 {
-   Unicode::snprintf(speedBuffer, SPEED_SIZE, "%d", speed); 
-
-   const int16_t textWidth = (this->speed).getTextWidth(); 
-   (this->speed).setWidth(textWidth);
-   (this->speed).centerX();
-   
-   const Rect& speedRect = (this->speed).getRect();
-   const int16_t speedRight = speedRect.x + speedRect.width;
-
-   kmh.setX(speedRight);
-
+   Unicode::snprintf(speedBuffer, SPEED_SIZE, "%d", speed);
    (this->speed).invalidate();
 }
 
