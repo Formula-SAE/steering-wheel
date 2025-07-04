@@ -14,7 +14,7 @@
       <Text Id="__SingleUse_MA3M" Alignment="Left" TypographyId="Secondary_Medium">
         <Translation Language="GB">MAX &lt;value&gt;ºC</Translation>
       </Text>
-      <Text Id="__SingleUse_WFZA" Alignment="Left" TypographyId="Primary_Large">
+      <Text Id="__SingleUse_WFZA" Alignment="Center" TypographyId="Primary_Large">
         <Translation Language="GB">&lt;value&gt;</Translation>
       </Text>
       <Text Id="__SingleUse_38DO" Alignment="Left" TypographyId="Primary_Large">
@@ -31,9 +31,6 @@
       </Text>
     </TextGroup>
     <TextGroup Id="Unsorted">
-      <Text Id="__SingleUse_I97Q" Alignment="Left" TypographyId="Primary_Medium">
-        <Translation Language="GB">km/h</Translation>
-      </Text>
       <Text Id="__SingleUse_2BRM" Alignment="Left" TypographyId="Primary_Small">
         <Translation Language="GB">DRIVE MODE</Translation>
       </Text>

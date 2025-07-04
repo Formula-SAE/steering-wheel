@@ -49,30 +49,9 @@
           },
           {
             "Type": "TextArea",
-            "Name": "speed",
-            "X": 222,
-            "Y": 21,
-            "Width": 357,
-            "Height": 180,
-            "TextId": "__SingleUse_WFZA",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "AutoSize": true,
-            "Wildcard1": {
-              "TextId": "__SingleUse_38DO",
-              "UseBuffer": true,
-              "BufferSize": 4
-            }
-          },
-          {
-            "Type": "TextArea",
             "Name": "clock",
             "X": 267,
-            "Y": 303,
+            "Y": 305,
             "Width": 266,
             "Height": 36,
             "TextId": "__SingleUse_EQH4",
@@ -138,34 +117,37 @@
           {
             "Type": "BoxProgress",
             "Name": "batteryLevel",
-            "X": 482,
-            "Y": 393,
+            "X": 487,
+            "Y": 391,
             "Width": 300,
             "Height": 60,
             "Direction": "Left",
             "FileNameBackground": "battery.png",
-            "IndicatorPositionX": 8,
+            "IndicatorPositionX": -6,
             "IndicatorPositionY": 9,
-            "IndicatorPositionWidth": 272,
+            "IndicatorPositionWidth": 288,
             "IndicatorPositionHeight": 42,
             "ProgressRangeMax": 100,
-            "ProgressInitialValue": 74
+            "ProgressInitialValue": 100
           },
           {
             "Type": "TextArea",
-            "Name": "kmh",
-            "X": 579,
-            "Y": 127,
-            "Width": 90,
-            "Height": 36,
-            "TextId": "__SingleUse_I97Q",
+            "Name": "speed",
+            "Y": 23,
+            "Width": 800,
+            "Height": 185,
+            "TextId": "__SingleUse_WFZA",
             "TextRotation": "0",
             "Color": {
               "Red": 255,
               "Green": 255,
               "Blue": 255
             },
-            "AutoSize": true
+            "Wildcard1": {
+              "TextId": "__SingleUse_38DO",
+              "UseBuffer": true,
+              "BufferSize": 4
+            }
           }
         ],
         "Interactions": []
