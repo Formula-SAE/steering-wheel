@@ -17,6 +17,7 @@ public:
     void setAvgTemp(int avgTemp);
     void setBatteryLevel(int batteryLevel);
     void setBatteryPower(int batteryPower);
+    void setClock(const char* clock);
 protected:
 };
 
