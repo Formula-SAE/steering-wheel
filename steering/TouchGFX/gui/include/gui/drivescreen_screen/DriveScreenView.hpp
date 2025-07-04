@@ -18,6 +18,7 @@ public:
     void setBatteryLevel(int batteryLevel);
     void setBatteryPower(int batteryPower);
     void setClock(const char* clock);
+    void setDriveMode(bool driveMode);
 protected:
 };
 
