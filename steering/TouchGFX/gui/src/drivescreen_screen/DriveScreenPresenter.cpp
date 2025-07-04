@@ -32,12 +32,14 @@ void DriveScreenPresenter::setAvgTemp(int avgTemp)
     view.setAvgTemp(avgTemp);
 }
 
-void DriveScreenPresenter::setBatteryLevel(int batteryLevel)
+void DriveScreenPresenter::setBatteryLevel(int batteryLevel, int minBatteryLevel, int maxBatteryLevel)
 {
-    view.setBatteryLevel(batteryLevel);
+    const int normalizedBatteryLevel = (batteryLevel - minBatteryLevel) / (maxBatteryLevel - minBatteryLevel) * 100;
+    view.setBatteryLevel(normalizedBatteryLevel);
 }
 
-void DriveScreenPresenter::setBatteryPower(int batteryPower)
+void DriveScreenPresenter::setBatteryPower(int batteryPower, int minBatteryPower, int maxBatteryPower)
 {
-    view.setBatteryPower(batteryPower);
+    const int normalizedBatteryPower = (batteryPower - minBatteryPower) / (maxBatteryPower - minBatteryPower) * 100;
+    view.setBatteryPower(normalizedBatteryPower);
 }
