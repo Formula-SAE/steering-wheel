@@ -9,6 +9,7 @@ DriveScreenView::DriveScreenView()
     setBatteryLevel(100);
     setBatteryPower(0);
     setClock("000 : 00 : 000");
+    setDriveMode(false);
 }
 
 void DriveScreenView::setupScreen()
@@ -63,4 +64,10 @@ void DriveScreenView::setClock(const char* clock)
 {
     Unicode::strncpy(clockBuffer, clock, CLOCK_SIZE);
     (this->clock).invalidate();
+}
+
+void DriveScreenView::setDriveMode(bool driveMode) 
+{
+    (this->driveMode).setVisible(driveMode);
+    driveModeBox.setVisible(driveMode);
 }
