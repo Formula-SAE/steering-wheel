@@ -31,6 +31,9 @@
       </Text>
     </TextGroup>
     <TextGroup Id="Unsorted">
+      <Text Id="__SingleUse_I97Q" Alignment="Left" TypographyId="Primary_Medium">
+        <Translation Language="GB">km/h</Translation>
+      </Text>
       <Text Id="__SingleUse_2BRM" Alignment="Left" TypographyId="Primary_Small">
         <Translation Language="GB">DRIVE MODE</Translation>
       </Text>

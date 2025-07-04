@@ -150,6 +150,22 @@
             "IndicatorPositionHeight": 42,
             "ProgressRangeMax": 100,
             "ProgressInitialValue": 74
+          },
+          {
+            "Type": "TextArea",
+            "Name": "kmh",
+            "X": 579,
+            "Y": 127,
+            "Width": 90,
+            "Height": 36,
+            "TextId": "__SingleUse_I97Q",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
           }
         ],
         "Interactions": []
