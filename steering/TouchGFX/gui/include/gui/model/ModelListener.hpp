@@ -18,8 +18,8 @@ public:
     virtual void setSpeed(int speed) {}
     virtual void setMaxTemp(int maxTemp) {}
     virtual void setAvgTemp(int avgTemp) {}
-    virtual void setBatteryLevel(int batteryLevel) {}
-    virtual void setBatteryPower(int batteryPower) {}
+    virtual void setBatteryLevel(int batteryLevel, int minBatteryLevel, int maxBatteryLevel) {}
+    virtual void setBatteryPower(int batteryPower, int minBatteryPower, int maxBatteryPower) {}
 protected:
     Model* model;
 };

@@ -30,8 +30,8 @@ public:
     void setSpeed(int speed) override;
     void setMaxTemp(int maxTemp) override;
     void setAvgTemp(int avgTemp) override;
-    void setBatteryLevel(int batteryLevel) override;
-    void setBatteryPower(int batteryPower) override;
+    void setBatteryLevel(int batteryLevel, int minBatteryLevel, int maxBatteryLevel) override;
+    void setBatteryPower(int batteryPower, int minBatteryPower, int maxBatteryPower) override;
 
 private:
     DriveScreenPresenter();
