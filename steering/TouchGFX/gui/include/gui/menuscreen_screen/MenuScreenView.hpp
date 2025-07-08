@@ -4,8 +4,6 @@
 #include <gui_generated/menuscreen_screen/MenuScreenViewBase.hpp>
 #include <gui/menuscreen_screen/MenuScreenPresenter.hpp>
 
-#include <vector>
-
 class MenuScreenView : public MenuScreenViewBase
 {
 public:
@@ -14,9 +12,11 @@ public:
     virtual void setupScreen();
     virtual void tearDownScreen();
 
-    void setMenuTiles(std::vector<char*> menuTiles);
+    void setMenuTiles(char *menuTiles[], int nMenuTiles);
     void setSelected(int index);
-protected:
+private:
+    void reset();
+    void hideUnusedTiles(int nUsedTiles);
 };
 
 #endif // MENUSCREENVIEW_HPP

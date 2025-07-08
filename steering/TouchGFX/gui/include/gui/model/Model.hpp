@@ -14,6 +14,7 @@ public:
     }
 
     void tick();
+    void initMenuItems();
 protected:
     ModelListener* modelListener;
     int speed;

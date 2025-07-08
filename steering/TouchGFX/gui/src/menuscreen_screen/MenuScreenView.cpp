@@ -15,22 +15,24 @@ void MenuScreenView::tearDownScreen()
     MenuScreenViewBase::tearDownScreen();
 }
 
-void MenuScreenView::setMenuTiles(std::vector<char*> menuTiles)
+void MenuScreenView::setMenuTiles(char *menuTiles[], int nMenuTiles)
 {
-    if (menuTiles.size() == 0) return;
-    menuTile0.setText(menuTiles.at(0));
+    reset();
+    hideUnusedTiles(nMenuTiles);
+    if (nMenuTiles == 0) return;
+    menuTile0.setText(menuTiles[0]);
 
-    if (menuTiles.size() == 1) return;
-    menuTile1.setText(menuTiles.at(1));
+    if (nMenuTiles == 1) return;
+    menuTile1.setText(menuTiles[1]);
 
-    if (menuTiles.size() == 2) return;
-    menuTile2.setText(menuTiles.at(2));
+    if (nMenuTiles == 2) return;
+    menuTile2.setText(menuTiles[2]);
 
-    if (menuTiles.size() == 3) return;
-    menuTile3.setText(menuTiles.at(3));
+    if (nMenuTiles == 3) return;
+    menuTile3.setText(menuTiles[3]);
 
-    if (menuTiles.size() == 4) return;
-    menuTile4.setText(menuTiles.at(4));
+    if (nMenuTiles == 4) return;
+    menuTile4.setText(menuTiles[4]);
 }
 
 void MenuScreenView::setSelected(int index)
@@ -39,5 +41,50 @@ void MenuScreenView::setSelected(int index)
     menuTile1.setSelected(index == 1);
     menuTile2.setSelected(index == 2);
     menuTile3.setSelected(index == 3);
-    menuTile4.setSelected(index == 5);
+    menuTile4.setSelected(index == 4);
+}
+
+void MenuScreenView::hideUnusedTiles(int nTilesUsed) {
+    if (nTilesUsed == 5) return;
+
+    if (nTilesUsed < 5) {
+        menuTile4.setVisible(false);
+        menuTile3.setDividerVisible(false);
+    }
+
+    if (nTilesUsed < 4) {
+        menuTile3.setVisible(false);
+        menuTile2.setDividerVisible(false);
+    }
+
+    if (nTilesUsed < 3) {
+        menuTile2.setVisible(false);
+        menuTile1.setDividerVisible(false);
+    }
+
+    if (nTilesUsed < 2) {
+        menuTile1.setVisible(false);
+        menuTile0.setDividerVisible(false);
+    }
+
+    if (nTilesUsed < 1) {
+        menuTile0.setVisible(false);
+    }
+}
+
+void MenuScreenView::reset() {
+    menuTile0.setVisible(true);
+    menuTile0.setDividerVisible(true);
+
+    menuTile1.setVisible(true);
+    menuTile1.setDividerVisible(true);
+
+    menuTile2.setVisible(true);
+    menuTile2.setDividerVisible(true);
+
+    menuTile3.setVisible(true);
+    menuTile3.setDividerVisible(true);
+
+    menuTile4.setVisible(true);
+    menuTile4.setDividerVisible(false);
 }
