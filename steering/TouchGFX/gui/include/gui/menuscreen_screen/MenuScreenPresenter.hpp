@@ -4,8 +4,6 @@
 #include <gui/model/ModelListener.hpp>
 #include <mvp/Presenter.hpp>
 
-#include <gui/menuscreen_screen/MenuItem.hpp>
-
 using namespace touchgfx;
 
 class MenuScreenView;

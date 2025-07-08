@@ -1,7 +1,7 @@
 #include <gui/menuscreen_screen/MenuScreenView.hpp>
 #include <gui/menuscreen_screen/MenuScreenPresenter.hpp>
 
-#include <cmath>
+#include <algorithm>
 
 MenuScreenPresenter::MenuScreenPresenter(MenuScreenView& v)
     : view(v), currentIndex(0), firstTileIndex(0), lastTileIndex(4)

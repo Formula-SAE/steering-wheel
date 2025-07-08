@@ -2,7 +2,6 @@
 #define MODELLISTENER_HPP
 
 #include <gui/model/Model.hpp>
-#include <gui/menuscreen_screen/MenuItem.hpp>
 
 class ModelListener
 {
