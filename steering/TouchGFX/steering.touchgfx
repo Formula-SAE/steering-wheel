@@ -236,15 +236,13 @@
             "Type": "Box",
             "Name": "background",
             "Width": 800,
-            "Height": 85
+            "Height": 77
           },
           {
             "Type": "TextArea",
             "Name": "tileName",
-            "X": 21,
-            "Y": 26,
-            "Width": 102,
-            "Height": 40,
+            "Width": 800,
+            "Height": 77,
             "TextId": "__SingleUse_0VQS",
             "TextRotation": "0",
             "Color": {
@@ -252,7 +250,6 @@
               "Green": 255,
               "Blue": 255
             },
-            "AutoSize": true,
             "Wildcard1": {
               "TextId": "__SingleUse_CBIL",
               "UseBuffer": true,

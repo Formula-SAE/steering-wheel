@@ -35,7 +35,7 @@
         <Translation Language="GB">Name</Translation>
       </Text>
       <Text Id="__SingleUse_0VQS" Alignment="Left" TypographyId="Primary_Medium">
-        <Translation Language="GB">&lt;value&gt;</Translation>
+        <Translation Language="GB">  &lt;value&gt;</Translation>
       </Text>
       <Text Id="__SingleUse_7U6K" Alignment="Center" TypographyId="Primary_Medium">
         <Translation Language="GB">MENU</Translation>
