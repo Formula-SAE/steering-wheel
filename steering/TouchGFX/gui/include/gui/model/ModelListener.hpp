@@ -2,8 +2,7 @@
 #define MODELLISTENER_HPP
 
 #include <gui/model/Model.hpp>
-
-#include <vector>
+#include <gui/menuscreen_screen/MenuItem.hpp>
 
 class ModelListener
 {
@@ -23,7 +22,7 @@ public:
     virtual void setBatteryLevel(int batteryLevel, int minBatteryLevel, int maxBatteryLevel) {}
     virtual void setBatteryPower(int batteryPower, int minBatteryPower, int maxBatteryPower) {}
 
-    virtual void setMenuTiles(std::vector<char*> menuTiles) {}
+    virtual void setMenuItems(char* menuItems[], int nMenuItems) {}
 
     virtual void handleButtonDown() {}
     virtual void handleButtonUp() {}
