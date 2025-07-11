@@ -47,7 +47,7 @@ private:
 
     const int NUM_TILES_TO_SHOW = 4;
     int nMenuItems;
-    char* menuItems[];
+    char* menuItems[16];
 };
 
 #endif // MENUSCREENPRESENTER_HPP
