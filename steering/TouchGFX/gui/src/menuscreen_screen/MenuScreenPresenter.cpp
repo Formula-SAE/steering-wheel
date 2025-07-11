@@ -2,6 +2,7 @@
 #include <gui/menuscreen_screen/MenuScreenPresenter.hpp>
 
 #include <algorithm>
+#include <cstring>
 
 MenuScreenPresenter::MenuScreenPresenter(MenuScreenView& v)
     : view(v), currentIndex(0), firstTileIndex(0), lastTileIndex(4)
@@ -60,7 +61,21 @@ void MenuScreenPresenter::handleButtonUp()
 
 void MenuScreenPresenter::handleButtonConfirm()
 {
+    if (currentIndex < 0 || currentIndex >= nMenuItems) {
+        return;
+    }
 
+    if (menuItems[currentIndex] == nullptr) {
+        return;
+    }
+
+    if (strcmp(menuItems[currentIndex], "Drive") == 0) {
+        view.gotoDriveScreen();
+    } else if (strcmp(menuItems[currentIndex], "Start Up") == 0) {
+        view.gotoStartUpScreen();
+    } else {
+        view.gotoSectionScreen();
+    }
 }
 
 void MenuScreenPresenter::handleButtonBack()

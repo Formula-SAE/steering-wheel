@@ -211,7 +211,44 @@
             }
           }
         ],
-        "Interactions": []
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerWhen",
+              "ActionCustomTypeName": "Call MenuScreen gotoDriveScreen"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "DriveScreen"
+            }
+          },
+          {
+            "InteractionName": "Interaction2",
+            "Trigger": {
+              "Type": "TriggerWhen",
+              "ActionCustomTypeName": "Call MenuScreen gotoSectionScreen"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "SectionScreen"
+            }
+          }
+        ],
+        "CustomActions": [
+          {
+            "Name": "gotoDriveScreen"
+          },
+          {
+            "Name": "gotoSectionScreen"
+          },
+          {
+            "Name": "gotoStartUpScreen"
+          }
+        ]
       },
       {
         "Name": "SectionScreen",
@@ -284,7 +321,7 @@
       "Height": 800
     },
     "SelectedColorDepth": 16,
-    "StartupScreenName": "DriveScreen",
+    "StartupScreenName": "MenuScreen",
     "SelectedStartupLanguage": "GB",
     "TouchGfxPath": "../Middlewares/ST/touchgfx",
     "UIPath": ".",
